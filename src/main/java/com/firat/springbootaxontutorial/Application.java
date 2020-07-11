@@ -8,13 +8,12 @@ import org.springframework.boot.autoconfigure.EnableAutoConfiguration;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @SpringBootApplication
-public class SpringBootAxonTutorialApplication {
+public class Application {
 
     public static void main(String[] args) {
-        SpringApplication.run(SpringBootAxonTutorialApplication.class, args);
+        SpringApplication.run(Application.class, args);
     }
 
     @EnableAutoConfiguration(exclude = AxonServerAutoConfiguration.class)
